@@ -1,0 +1,493 @@
+
+
+
+.poster {
+  margin:auto;
+}
+
+
+/**********
+This is the styling for the login nav
+***********/
+.login-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.login {
+  width: 100%;
+  height: 50px;
+  background-color: #0F6BA6;
+  vertical-align: middle;
+}
+
+.login-text {
+  width: 40%;
+  display: inline-block;
+  color: white;
+  font-family: 'Roboto';
+  margin-top: 100px;
+  margin-left: 15%;
+  font-size: 30px;
+}
+
+.login > input, .login > button {
+  display: inline-block;
+}
+
+.login-background {
+  height: 100%;
+  background-color: #127ABD;
+}
+.navFloat {
+  float: right;
+  margin-right: 20px;
+  margin-top: 11px;
+}
+
+.navFloat > input {
+    border-radius: 3px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.navFloat > button {
+    margin-right: 5px;
+    background-color: #0F6BA6;
+    color: white;
+    -webkit-transition: background-color 0.5s; /* Safari */
+    transition: background-color 0.5s;
+    border: 0px;
+    height: 35px;
+    width: 75px;
+    padding: 2px;
+
+}
+
+.navFloat > button:hover {
+  background-color: #50AE54;
+}
+
+/********
+Search Styles
+********/
+.search-container {
+    height: auto;
+    width: 40%;
+    margin-left: 15%;
+    margin-top: 10px;
+    background-color: #E2E4E6;
+    text-align: center;
+    border-radius: 10px;
+    padding: 12px 20px;
+}
+
+.search > input, .search > button {
+  display: inline-block;
+  margin: auto;
+  margin-right: 5px;
+  background-color: #FFFFFF;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  /*box-shadow: 0px 2px #CDCDCD;*/
+}
+
+.search > button {
+  width: 100px;
+  background-color: #0F6BA6;
+  color: white;
+  -webkit-transition: background-color 0.5s; /* Safari */
+  transition: background-color 0.5s;
+}
+
+.search > button:hover {
+  background-color: #50AE54;
+}
+
+/********
+Signup Styles
+********/
+.signup-container {
+  height: auto;
+  width: 300px;
+  float: right;
+  margin-right: 50px;
+  width: 325px;
+  margin-top: 100px;
+  background-color: #E2E4E6;
+  text-align: center;
+  border-radius: 10px;
+}
+.signup > input, .signup > button {
+  display: block;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  background-color: #FFFFFF;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  /*box-shadow: 0px 2px #CDCDCD;*/
+}
+.signup > input {
+  width: 310px;
+}
+
+.signup > button {
+  width: 310px;
+  background-color: #0F6BA6;
+  color: white;
+  margin-top: 35px;
+  -webkit-transition: background-color 0.5s; /* Safari */
+  transition: background-color 0.5s;
+}
+
+.signup > button:hover {
+  background-color: #50AE54;
+}
+
+#signup-validation, #signup-success  {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+
+}
+
+/************
+Profile Data Styles
+************/
+.headshot {
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  -webkit-box-shadow: 2px 2px 4px black;
+  box-shadow: 2px 2px 4px black;
+  border-radius: 10px;
+  transform: translateY(30%);
+
+}
+.profile-container {
+  background-color: #127ABD;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: none;
+}
+.cell1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  height: 300px;
+  line-height: 300px;
+}
+
+.cell2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.bio {
+  color: #127ABD;
+  width: 90%;
+  height: 450px;
+  margin: 40px 20px 20px 20px;
+  padding: 10px;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  line-height: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #1f1f1f
+}
+blockquote {
+  border-left: 0px;
+}
+
+.profile-separator {
+  height: 60px;
+  background-color: #0F6BA6;
+}
+/***********************************
+Modal Styling
+***********************************/
+
+.update-modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.update-modal-content {
+
+    margin: 15% auto;
+    width: 80%;
+    background-color: #E2E4E6;
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.form {
+  text-align: center;
+  margin: auto;
+  height: 450px;
+  width: 100%;
+}
+
+.form > p {
+    margin: 20px 0px;
+    color: #0F6BA6;
+    font-size: 25px;
+}
+
+.form > button {
+  width: 310px;
+  background-color: #0F6BA6;
+  color: white;
+  -webkit-transition: background-color 0.5s; /* Safari */
+  transition: background-color 0.5s;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  margin-top: 15px;
+}
+
+.form > button:hover {
+  background-color: #50AE54;
+}
+
+.modal-content {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  height: 50px;
+}
+
+.textarea {
+  height: 200px;
+}
+
+.update-modal:active  {
+  background-color: white;
+}
+
+/***************************
+Logout Styling
+***************************/
+.logout-bar {
+
+  height: 50px;
+  background-color: #0F6BA6;
+}
+.logout-bar p {
+  display: inline-block;
+  color: white;
+  margin-right: 20px;
+}
+.logout-bar button {
+  margin-right: 10px;
+}
+.logout-bar > p, .logout-bar > li {
+  float: right;
+}
+
+.logout-bar p {
+  margin-top: 11px;
+}
+
+li {
+  display: inline-block;
+  color: white;
+  list-style: none;
+  padding-right: 10px;
+  padding-left: 5px;
+  vertical-align: top;
+  padding-top: 11px;
+  height: 30px;
+}
+
+li a {
+  box-sizing: border-box;
+  display: block;
+  width: auto;
+  height: 50px;
+  color: white;
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: white;
+  height: 50px;
+  color: black;
+}
+
+li a:hover {
+  text-decoration: none;
+}
+
+/************
+Carousel Styles
+**********/
+
+.carousel-indicators {
+  visibility: hidden;
+}
+.carousel-control {
+  color: black;
+}
+.carousel-control.left {
+  background-image: linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+}
+.carousel-control.right {
+  background-image: linear-gradient(left,rgba(0,0,0,0) 0,rgba(0,0,0,0) 100%);
+}
+.carousel {
+  background-color: white;
+  padding: 15px 0px;
+}
+
+/************
+Credit Styles
+*************/
+
+.credits-container{
+  width: 100%;
+  position: relative;
+  height: 150px;
+}
+
+.credits-container button {
+  width: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  border-radius: 10px;
+  background-color: #0F6BA6;
+  -webkit-transition: background-color 0.5s; /* Safari */
+  transition: background-color 0.5s;
+  font-size: 20px;
+  font-family: "Lato";
+  color: white;
+  transition: .3s .1s all ease-in-out;
+  outline: none;
+
+}
+
+.credits-container button:hover {
+  background-color: #50AE54;;
+}
+
+.credits {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #127ABD;
+  padding-top: 30px;
+}
+
+.credits-body {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  margin-bottom: 20px;
+  animation-duration: 1s;
+  animation-name: slidein;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.credits-body p {
+  text-align: justify;
+}
+
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    opacity: 0;
+  }
+
+  to {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+
+
+.credits-body h6 {
+  font-style: italic;
+}
+
+/*****
+Media Queries
+*****/
+
+
+@media screen and (max-width: 700px) {
+  .profile-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .credits-body {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+
+  }
+
+  /*.credits-body p {
+    text-align: justify;
+  }*/
+
+  .cell2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .logout-bar  {
+    height: 100px;
+  }
+
+  .logout-bar {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .form > button {
+      width: 75%;
+  }
+
+  .credits-body {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-left: 10px;
+    padding-right: 10px
+
+
+  }
+}
