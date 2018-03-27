@@ -19,29 +19,14 @@ export function login(user) {
   .catch(err => {
     console.log(err.response)
     dispatch({
-      type: "ERROR",
-      user: err.response
+      type: "ERROR_BAD_CREDENTIALS",
+      error: err.response
     })
   })
 }
 }
 
-export function signup(user) {
-  return dispatch => {axios.post("/auth/signup", user).then(response => {
-    dispatch({
-      type: "SIGNUP",
-      user: response.data
-    })
-  })
-  .catch(err => {
-    console.log(err.response)
-    dispatch({
-      type: "ERROR",
-      user: err.response
-    })
-  })
-  }
-}
+
 
 export function persistLogin(token) {
   return dispatch => {axios.post("api/user/persist", token).then(response => {
@@ -139,9 +124,8 @@ export default function loginReducer(prevState = defaultUser, action) {
       };
     case "DELETE":
       return defaultUser;
-    case "ERROR":
-      return action.user;
-
+    case "ERROR_BAD_CREDENTIALS":
+      return action.error;
     default:
       return prevState
   }

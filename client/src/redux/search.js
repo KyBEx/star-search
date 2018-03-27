@@ -7,7 +7,6 @@ export function search(user) {
     firstName = firstName.charAt(0).toUpperCase()+firstName.slice(1);
     lastName = lastName.charAt(0).toUpperCase()+lastName.slice(1);
     let data = firstName+"%20"+lastName;
-    console.log(data)
     localStorage.setItem("result", JSON.stringify(data));
     dispatch({
       type: "SEARCH",
@@ -15,10 +14,9 @@ export function search(user) {
     });
   })
   .catch(err => {
-    console.log(err.response)
     dispatch({
-      type: "ERROR",
-      user: err
+      type: "ERROR_NO_USER",
+      error: err.response
     })
   })
 }
@@ -42,9 +40,9 @@ export default function searchReducer(prevState = {}, action) {
         url: action.user.result.url,
         bio: action.user.result.bio,
       };
-     case "ERROR":
-     console.log(action.user)
-       return action.user.result;
+     case "ERROR_NO_USER":
+        console.log(action.error);
+       return action.error;
      case "CLEAR_RESULTS":
         return prevState;
      default:

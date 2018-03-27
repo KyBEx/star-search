@@ -2,6 +2,7 @@
 import user from "./login";
 import result from "./search";
 import credits from "./actorInfo";
+import addUser from "./signup"
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 
@@ -9,7 +10,8 @@ const rootReducer = combineReducers(
   {
     user,
     credits,
-    result
+    result,
+    addUser
   }
 )
 

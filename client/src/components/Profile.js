@@ -30,8 +30,8 @@ class Profile extends React.Component {
       this.setState({
         showUpdate: false
       })
-
-      if(!this.props.user.token) {
+      
+      if(!this.props.user.token && !this.props.user.status) {
         this.props.persistLogin(localStorage.getItem("token"));
       }
 

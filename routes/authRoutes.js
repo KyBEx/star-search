@@ -22,8 +22,8 @@ authRoutes.post("/login", (req, res) => {
       return res.status(403).send({err: "Username or password is incorrect."})
     } else if (user) {
       user.checkPassword(req.body.password, (err, match) => {
-        if (err) res.status(403).send(err);
-        if (!match) res.status(403).send({err: "Username or password is incorrect."})
+        if (err) return res.status(403).send(err);
+        if (!match) return res.status(403).send({err: "Username or password is incorrect."})
         const token = jwt.sign(user.withoutPassword(), process.env.SECRET);
         return res.send({token, user: user.withoutPassword()});
       })
