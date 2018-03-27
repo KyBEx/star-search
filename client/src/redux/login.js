@@ -33,6 +33,13 @@ export function signup(user) {
       user: response.data
     })
   })
+  .catch(err => {
+    console.log(err.response)
+    dispatch({
+      type: "ERROR",
+      user: err.response
+    })
+  })
   }
 }
 
